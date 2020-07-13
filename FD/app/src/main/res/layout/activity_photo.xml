@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoActivity"
+    style="@style/PhotoActivityTheme"
+    android:id="@+id/photo_view">
+
+    <ScrollView
+        android:id="@+id/results_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/scroller_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/scroller_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/analyzing_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uploading"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttons_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_taken"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:text="@string/cancel"
+            style="@style/DefaultButtonStyle"/>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:text="@string/save"
+            style="@style/DefaultButtonStyle" />
+
+        <Button
+            android:id="@+id/analyze_btn"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:text="@string/analyze"
+            style="@style/DefaultButtonStyle" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

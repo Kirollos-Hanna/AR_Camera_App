@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeasurementActivity"
+    style="@style/PhotoActivityTheme">
+
+    <fragment
+        android:id="@+id/sceneform_fragment"
+        android:name="com.example.fd.WritingArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/sk_height_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:enabled="false"
+        android:max="500"
+        android:min="0"
+        android:progress="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_width"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Width"
+            android:textSize="20dp"
+            style="@style/DefaultButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_height"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Height"
+            android:textSize="20dp"
+            style="@style/DefaultButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textSize="20dp"
+            style="@style/DefaultButtonStyle"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

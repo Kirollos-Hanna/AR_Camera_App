@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/nav_user"-->
+<!--            android:icon="@drawable/ic_user"-->
+<!--            android:title="@string/profile" />-->
+        <item
+            android:id="@+id/nav_ar_camera"
+            android:icon="@drawable/ic_ar_camera"
+            android:title="@string/ar_camera" />
+        <item
+            android:id="@+id/nav_normal_camera"
+            android:icon="@drawable/ic_normal_camera"
+            android:title="@string/camera" />
+        <item
+            android:id="@+id/nav_furniture_catalog"
+            android:icon="@drawable/ic_furniture_catalog"
+            android:title="@string/furniture_catalog" />
+        <item
+            android:id="@+id/nav_room_catalog"
+            android:icon="@drawable/ic_room_catalog"
+            android:title="@string/room_catalog" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/sign_out_button"
+            android:title="Log Out"/>
+    </group>
+</menu>

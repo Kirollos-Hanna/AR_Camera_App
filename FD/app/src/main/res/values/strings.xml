@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FD</string>
+    <string name="menu">Menu</string>
+    <string name="title_activity_rooms">RoomsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">save</string>
+    <string name="analyze">analyze</string>
+    <string name="uploading">Uploading image to server...</string>
+    <string name="analyzing_image">Analyzing image...</string>
+    <string name="no_images">Could not detect any images</string>
+    <string name="ar_camera">AR Camera</string>
+    <string name="profile">Profile</string>
+    <string name="camera">Camera</string>
+    <string name="furniture_catalog">Furniture Catalog</string>
+    <string name="room_catalog">Room Catalog</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+</resources>
